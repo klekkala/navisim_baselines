@@ -24,5 +24,5 @@ This repository provides training scripts for reinforcement learning agents usin
 ## 🧩 Requirements
 
 ```bash
-pip install stable-baselines3[extra] mani-skill matplotlib torch pillow
+pip install stable-baselines3 mani-skill matplotlib torch pillow
 pip install hydra-core omegaconf termcolor
