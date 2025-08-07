@@ -1,0 +1,221 @@
+Loading 997 episodes
+  0%|          | 0/997 [00:00<?, ?it/s]  4%|▍         | 41/997 [00:00<00:02, 401.37it/s]  9%|▊         | 87/997 [00:00<00:02, 434.97it/s] 14%|█▎        | 135/997 [00:00<00:01, 455.32it/s] 18%|█▊        | 184/997 [00:00<00:01, 465.53it/s] 23%|██▎       | 232/997 [00:00<00:01, 469.80it/s] 28%|██▊       | 281/997 [00:00<00:01, 474.12it/s] 33%|███▎      | 330/997 [00:00<00:01, 476.47it/s] 38%|███▊      | 378/997 [00:00<00:01, 477.41it/s] 43%|████▎     | 427/997 [00:00<00:01, 479.77it/s] 48%|████▊     | 476/997 [00:01<00:01, 479.91it/s] 53%|█████▎    | 525/997 [00:01<00:00, 481.33it/s] 58%|█████▊    | 574/997 [00:01<00:00, 481.04it/s] 63%|██████▎   | 624/997 [00:01<00:00, 484.35it/s] 68%|██████▊   | 673/997 [00:01<00:00, 485.82it/s] 72%|███████▏  | 722/997 [00:01<00:00, 486.41it/s] 77%|███████▋  | 772/997 [00:01<00:00, 488.30it/s] 82%|████████▏ | 821/997 [00:01<00:00, 488.50it/s] 87%|████████▋ | 870/997 [00:01<00:00, 488.14it/s] 92%|█████████▏| 920/997 [00:01<00:00, 489.09it/s] 97%|█████████▋| 970/997 [00:02<00:00, 490.18it/s]100%|██████████| 997/997 [00:02<00:00, 479.54it/s]
+Iteration 0, loss: 0.21924170851707458
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 1000, loss: 4.4837848690804094e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 2000, loss: 2.347698318772018e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 3000, loss: 2.5334975362056866e-05
+Evaluated 10 episodes
+success_once: 0.0100
+return: 0.0500
+episode_len: 100.0000
+reward: 0.0005
+success_at_end: 0.0100
+New best success_once_rate: 0.0100. Saving checkpoint.
+New best success_at_end_rate: 0.0100. Saving checkpoint.
+Iteration 4000, loss: 1.8028476915787905e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 5000, loss: 3.109041426796466e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 6000, loss: 1.7774440493667498e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 7000, loss: 3.393495353520848e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 8000, loss: 1.2521200915216468e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 9000, loss: 1.2193251677672379e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 10000, loss: 1.2081637578376103e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 11000, loss: 3.6342440580483526e-05
+Evaluated 10 episodes
+success_once: 0.0700
+return: 0.4200
+episode_len: 100.0000
+reward: 0.0042
+success_at_end: 0.0700
+New best success_once_rate: 0.0700. Saving checkpoint.
+New best success_at_end_rate: 0.0700. Saving checkpoint.
+Iteration 12000, loss: 1.182653613795992e-05
+Evaluated 10 episodes
+success_once: 0.1000
+return: 0.8700
+episode_len: 100.0000
+reward: 0.0087
+success_at_end: 0.0900
+New best success_once_rate: 0.1000. Saving checkpoint.
+New best success_at_end_rate: 0.0900. Saving checkpoint.
+Iteration 13000, loss: 1.1264710337854922e-05
+Evaluated 10 episodes
+success_once: 0.0200
+return: 0.1500
+episode_len: 100.0000
+reward: 0.0015
+success_at_end: 0.0200
+Iteration 14000, loss: 1.5751371392980218e-05
+Evaluated 10 episodes
+success_once: 0.0300
+return: 0.2100
+episode_len: 100.0000
+reward: 0.0021
+success_at_end: 0.0300
+Iteration 15000, loss: 1.328615235252073e-05
+Evaluated 10 episodes
+success_once: 0.0700
+return: 0.5100
+episode_len: 100.0000
+reward: 0.0051
+success_at_end: 0.0700
+Iteration 16000, loss: 9.924725418386515e-06
+Evaluated 10 episodes
+success_once: 0.1000
+return: 0.7700
+episode_len: 100.0000
+reward: 0.0077
+success_at_end: 0.1000
+New best success_at_end_rate: 0.1000. Saving checkpoint.
+Iteration 17000, loss: 0.00070122757460922
+Evaluated 10 episodes
+success_once: 0.0200
+return: 0.2600
+episode_len: 100.0000
+reward: 0.0026
+success_at_end: 0.0200
+Iteration 18000, loss: 1.2438022167771123e-05
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 19000, loss: 7.999238732736558e-06
+Evaluated 10 episodes
+success_once: 0.0500
+return: 0.7900
+episode_len: 100.0000
+reward: 0.0079
+success_at_end: 0.0400
+Iteration 20000, loss: 1.941768277902156e-05
+Evaluated 10 episodes
+success_once: 0.1000
+return: 1.5400
+episode_len: 100.0000
+reward: 0.0154
+success_at_end: 0.0800
+Iteration 21000, loss: 8.181808880181052e-06
+Evaluated 10 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 100.0000
+reward: 0.0000
+success_at_end: 0.0000
+Iteration 22000, loss: 3.4198696084786206e-05
+Evaluated 10 episodes
+success_once: 0.1200
+return: 2.3500
+episode_len: 100.0000
+reward: 0.0235
+success_at_end: 0.1100
+New best success_once_rate: 0.1200. Saving checkpoint.
+New best success_at_end_rate: 0.1100. Saving checkpoint.
+Iteration 23000, loss: 1.0776775525300764e-05
+Evaluated 10 episodes
+success_once: 0.0400
+return: 0.9900
+episode_len: 100.0000
+reward: 0.0099
+success_at_end: 0.0300
+Iteration 24000, loss: 1.2012129445793107e-05
+Evaluated 10 episodes
+success_once: 0.0600
+return: 1.0700
+episode_len: 100.0000
+reward: 0.0107
+success_at_end: 0.0600
+Iteration 25000, loss: 8.303929462272208e-06
+Evaluated 10 episodes
+success_once: 0.1000
+return: 1.4700
+episode_len: 100.0000
+reward: 0.0147
+success_at_end: 0.0900
+Iteration 26000, loss: 1.0057550753117539e-05
+Evaluated 10 episodes
+success_once: 0.0300
+return: 0.8800
+episode_len: 100.0000
+reward: 0.0088
+success_at_end: 0.0300
+Iteration 27000, loss: 7.99592089606449e-06
+Evaluated 10 episodes
+success_once: 0.0800
+return: 1.5400
+episode_len: 100.0000
+reward: 0.0154
+success_at_end: 0.0700
+Iteration 28000, loss: 9.804341061681043e-06
+Evaluated 10 episodes
+success_once: 0.0300
+return: 0.3700
+episode_len: 100.0000
+reward: 0.0037
+success_at_end: 0.0300
+Iteration 29000, loss: 1.998740845010616e-05
+Evaluated 10 episodes
+success_once: 0.0400
+return: 1.0400
+episode_len: 100.0000
+reward: 0.0104
+success_at_end: 0.0300
