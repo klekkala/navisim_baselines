@@ -1,4 +1,4 @@
-name: maniskill-py39
+name: maniskill-sac
 channels:
   - pytorch
   - defaults
