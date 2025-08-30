@@ -134,4 +134,4 @@ def save_key_frames(frames, ep_index):
 if __name__ == "__main__":
     trained_model = train_model()
     test_and_record(trained_model, num_episodes=5)
-    print("✅ DDPG训练与测试完成，结果保存在 result_ddpg/")
+    print("✅ DDPG training and testing complete. Results saved in result_ddpg/")
