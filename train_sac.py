@@ -30,7 +30,7 @@ def make_env(env_id="PickCube-v1", max_episode_steps=None):
 
     env = RecordEpisode(
         env,
-        output_dir="videos_sac",     # 
+        output_dir="videos_sac",     
         save_trajectory=False,
         video_fps=20
     )
@@ -39,7 +39,7 @@ def make_env(env_id="PickCube-v1", max_episode_steps=None):
     return env
 
 # ===========================================
-# 3. 训练 SAC 模型
+# 3. Train SAC model
 # ===========================================
 def train_model():
     train_env = make_env(env_id="PickCube-v1", max_episode_steps=200)
@@ -48,7 +48,7 @@ def train_model():
         "MlpPolicy",
         train_env,
         verbose=1,
-        tensorboard_log="logs_sac/sac_tensorboard",  # ✅ logs_sac
+        tensorboard_log="logs_sac/sac_tensorboard",  
         learning_rate=3e-4,
         buffer_size=1000000,
         batch_size=256,
@@ -63,7 +63,7 @@ def train_model():
 
     checkpoint_callback = CheckpointCallback(
         save_freq=10000,
-        save_path="logs_sac/",         # ✅ logs_sac
+        save_path="logs_sac/",         
         name_prefix="sac_model"
     )
 
@@ -73,11 +73,12 @@ def train_model():
         tb_log_name="sac_pickcube_run"
     )
 
-    model.save("logs_sac/sac_maniskill_pickcube_final")  # ✅ logs_sac
+    model.save("logs_sac/sac_maniskill_pickcube_final")  
     train_env.close()
     return model
 
 # ===========================================
+# Test and record videos
 # ===========================================
 def test_and_record(model, num_episodes=5):
     test_env = make_env(env_id="PickCube-v1", max_episode_steps=200)
@@ -97,7 +98,7 @@ def test_and_record(model, num_episodes=5):
             obs, reward, terminated, truncated, info = test_env.step(action)
             done = terminated or truncated
 
-        gif_path = f"result_sac/episode_{ep}.gif"         # ✅ result_sac
+        gif_path = f"result_sac/episode_{ep}.gif"         
         save_gif(frames, gif_path)
         save_key_frames(frames, ep)
 
@@ -128,14 +129,14 @@ def save_key_frames(frames, ep_index):
             plt.imshow(frames[idx])
             plt.axis("off")
             plt.title(f"Episode {ep_index} - Step {idx}")
-            save_path = f"result_sac/ep{ep_index}_step{idx}.png"  # ✅ result_sac
+            save_path = f"result_sac/ep{ep_index}_step{idx}.png"  
             plt.savefig(save_path, bbox_inches="tight", pad_inches=0.1)
             plt.close()
 
 # ===========================================
-# 5. 主函数
+# 5. Main function
 # ===========================================
 if __name__ == "__main__":
     trained_model = train_model()
     test_and_record(trained_model, num_episodes=5)
-    print("训练与测试已完成，生成的 GIF 和关键帧已保存到 result_sac/ 目录中。")
+    print("Training and testing complete. GIFs and key frames have been saved to result_sac/ directory.")
