@@ -27,12 +27,3 @@ Clone this repository and create the environment from `ppo.yaml`:
 conda env create -f ppo.yaml
 conda activate maniskill-py39
 
-⚙️ Environment
-
-The Conda environment is fully specified in ppo.yaml.
-Key dependencies include:
-	•	torch==2.7.0
-	•	stable-baselines3==2.6.0
-	•	gymnasium==0.29.1
-	•	mani-skill==3.0.0b20
-	•	matplotlib, pandas, moviepy, pillow
