@@ -34,7 +34,12 @@ Clone this repository into the Visual-RFT directory:
 
 ```bash
 # Inside Visual-RFT directory
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git maniskill_virft
+# Clone the navisim_baselines repository
+git clone https://github.com/klekkala/navisim_baselines.git
+cd navisim_baselines/Novel-rl-algorithms/Visual-RFT
+
+# The ManiSkill → Visual-RFT pipeline is located here
+cd maniskill_virft
 ```
 
 **Directory structure:**
