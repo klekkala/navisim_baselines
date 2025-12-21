@@ -2,6 +2,9 @@
 
 Train a **Soft Actor-Critic (SAC)** agent with **R3M visual embeddings** and **proprioception** for ManiSkill **PickCube-v1**.
 
+⚠️ **Important**: This SAC implementation is designed to be placed **inside the R3M repository directory**  
+(i.e. the `sac/` folder should live under the cloned `r3m/` directory).
+
 ---
 
 ## 🚀 Quick Start
