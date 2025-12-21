@@ -1,0 +1,118 @@
+# ===== run/meta =====
+project_name: navibridge
+run_name: navibridge_pickcube
+use_wandb: true          
+train: true
+seed: 42
+
+# ===== system =====
+gpu_ids: [0]
+num_workers: 8
+batch_size: 128
+eval_batch_size: 400
+
+# ===== optimization =====
+optimizer: adamw
+lr: 1e-4                  
+max_norm: 1.0
+scheduler: cosine
+warmup: true
+warmup_epochs: 5
+num_epochs: 50
+save_freq: 5
+
+# ===== model =====
+model_type: navibridge
+vision_encoder: navibridge_encoder
+encoding_size: 256
+obs_encoder: efficientnet-b0
+attn_unet: false
+cond_predict_scale: false
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+down_dims: [64, 128, 256]
+class_num: 5 
+
+# ===== diffusion =====
+num_diffusion_iters: 10
+sampler: euler
+pred_mode: ve
+weight_schedule: karras
+sigma_data: 0.5
+sigma_min: 0.002
+sigma_max: 10.0
+rho: 7.0
+clip_denoised: true
+guidance: 1.0
+churn_step_ratio: 0.33
+beta_d: 2
+beta_min: 0.1
+cov_xy: 0.0
+
+# sampling/runtime
+clip_denoised: true
+sampler: euler
+sampler_name: uniform     # ← 新增这一行
+churn_step_ratio: 0.33
+guidance: 1.0
+
+# ===== masking / context =====
+goal_mask_prob: 0.5
+context_type: temporal
+context_size: 3
+alpha: 1e-4
+normalize: true
+
+# ===== distances (buckets) =====
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 3
+  max_dist_cat: 20
+
+# ===== action head =====
+len_traj_pred: 8          # Must be 8 for U-Net architecture compatibility
+action_dim: 2             # 2D actions (dx, dy)
+learn_angle: false
+
+# ===== prior (choose one) =====
+prior_policy: gaussian    
+
+# ===== CVAE (only if prior_policy: cvae) =====
+train_params:
+  batch_size: 128
+  num_itr: 3001
+  lr: 5e-06
+  lr_gamma: 0.99
+  lr_step: 1000
+  l2_norm: 0.0
+  ema: 0.99
+diffuse_params:
+  latent_dim: 64
+  layer: 3
+  net_type: vae_mlp
+  ckpt_path: models/cvae.pth
+  pretrain: false
+
+# ===== dataset =====
+image_size: [96, 96]
+dataset_name: pickcube_maniskill
+
+datasets:
+  pickcube_maniskill:
+    data_folder: ../dataset/pickcube_maniskill
+    train: ../dataset/pickcube_maniskill
+    test: ../dataset/pickcube_maniskill
+    end_slack: 3
+    goals_per_obs: 1
+    negative_mining: true
+    waypoint_spacing: 1
+# ===== logging / eval =====
+print_log_freq: 100
+image_log_freq: 1000
+num_images_log: 8
+eval_fraction: 0.0
+wandb_log_freq: 10
+eval_freq: 1

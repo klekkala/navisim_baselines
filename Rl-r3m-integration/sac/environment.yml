@@ -1,0 +1,28 @@
+name: r3m_sac
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # PyTorch (CUDA 12)
+      - torch==2.7.1
+      - torchvision==0.22.1
+
+      # NumPy and core libraries
+      - numpy==1.26.4
+      - pillow==11.3.0
+
+      # ManiSkill and Gymnasium
+      - mani-skill==3.0.0b21
+      - gymnasium==0.29.1
+      - sapien==3.0.0
+
+      # Utilities
+      - tqdm
+      - matplotlib
+
+# Note: R3M must be installed separately after environment setup:
+# git clone https://github.com/facebookresearch/r3m.git
+# cd r3m && pip install -e . && cd ..
