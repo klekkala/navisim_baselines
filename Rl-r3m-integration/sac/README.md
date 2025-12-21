@@ -10,8 +10,9 @@ Train a **Soft Actor-Critic (SAC)** agent with **R3M visual embeddings** and **p
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+# Clone the navisim_baselines repository
+git clone https://github.com/klekkala/navisim_baselines.git
+cd navisim_baselines/Rl-r3m-integration/sac
 
 # Create conda environment
 conda env create -f environment.yml
